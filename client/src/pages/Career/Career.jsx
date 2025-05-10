@@ -48,11 +48,11 @@
 //         <div className="mt-20 flex flex-col gap-4">
 //           {jobs?.data?.map((job) => (
 //             <div key={job._id} className="group duration-300">
-//               <div className="border px-6 py-4 rounded group-hover:border-[#74D09D] duration-300 cursor-pointer">
+//               <div className="border px-6 py-4 rounded group-hover:border-[#244436] duration-300 cursor-pointer">
 //                 <div className="mt-2 flex-1">
 //                   <h2
 //                     onClick={() => setModalData(job)}
-//                     className="text-lg font-semibold text-[#262626]/80 group-hover:text-[#74D09D] duration-300"
+//                     className="text-lg font-semibold text-[#262626]/80 group-hover:text-[#244436] duration-300"
 //                   >
 //                     {job.title}
 //                   </h2>
@@ -66,7 +66,7 @@
 //                     {/* Eye Icon to open modal */}
 //                     <button
 //                       onClick={() => setModalData(job)}
-//                       className="absolute right-0 bottom-0 text-[#74D09D] hover:text-[#3BA272] duration-300"
+//                       className="absolute right-0 bottom-0 text-[#244436] hover:text-[#3BA272] duration-300"
 //                     >
 //                       <FaEye size={16} />
 //                     </button>
@@ -74,7 +74,7 @@
 
 //                   <div>
 //                     <Link to={`/applied/${job._id}`}>
-//                       <button className="text-[#262626]/70 group-hover:text-[#74D09D] duration-300 font-semibold">
+//                       <button className="text-[#262626]/70 group-hover:text-[#244436] duration-300 font-semibold">
 //                         <span className="hover:text-[#3BA272] duration-300">
 //                           Apply Now
 //                         </span>
@@ -97,7 +97,7 @@
 //                 </h2>
 //                 <button
 //                   onClick={() => setModalData(null)}
-//                   className="top-0 right-2 absolute bg-[#74D09D] hover:bg-[#3BA272] duration-300 text-[#fff] p-1 text-xl rounded-full"
+//                   className="top-0 right-2 absolute bg-[#244436] hover:bg-[#3BA272] duration-300 text-[#fff] p-1 text-xl rounded-full"
 //                 >
 //                   <FaXmark />
 //                 </button>
@@ -108,7 +108,7 @@
 
 //               <div>
 //                 <Link to={`/applied/${modalData._id}`}>
-//                   <h2 className="bg-[#74D09D] text-white px-4 py-2 rounded hover:bg-[#3BA272] duration-300 inline-flex cursor-pointer">
+//                   <h2 className="bg-[#244436] text-white px-4 py-2 rounded hover:bg-[#3BA272] duration-300 inline-flex cursor-pointer">
 //                     Apply Now
 //                   </h2>
 //                 </Link>
@@ -171,8 +171,8 @@ const Career = () => {
             alDesign="item-center justify-center text-center"
             centerDesign="item-center flex justify-center text-center"
             subTitle="OUR LATEST JOBS"
-            title="Make Work more Efficient"
-            shortInfo="Bibendum at varius vel pharetra vel turpis. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Urna cursus eget nunc scelerisque viverra mauris."
+            title="Make Work More Efficient"
+            shortInfo="Enhancing productivity through thoughtful design and precision manufacturing. From concept to creation, we ensure every detail contributes to better performance and lasting quality."
           />
         </div>
 
@@ -187,11 +187,11 @@ const Career = () => {
               viewport={{ once: true, amount: 0.2 }} // Only animate once when 20% in view
               custom={index}
             >
-              <div className="border px-6 py-4 rounded group-hover:border-[#74D09D] duration-300 cursor-pointer">
+              <div className="border px-6 py-4 rounded group-hover:border-[#244436] duration-300 cursor-pointer">
                 <div className="mt-2 flex-1">
                   <h2
                     onClick={() => setModalData(job)}
-                    className="text-lg font-semibold text-[#262626]/80 group-hover:text-[#74D09D] duration-300"
+                    className="text-lg font-semibold text-[#262626]/80 group-hover:text-[#244436] duration-300"
                   >
                     {job.title}
                   </h2>
@@ -204,7 +204,7 @@ const Career = () => {
                     </p>
                     <button
                       onClick={() => setModalData(job)}
-                      className="absolute right-0 bottom-0 text-[#74D09D] hover:text-[#3BA272] duration-300"
+                      className="absolute right-0 bottom-0 text-[#244436] hover:text-[#3BA272] duration-300"
                     >
                       <FaEye size={16} />
                     </button>
@@ -212,7 +212,7 @@ const Career = () => {
 
                   <div>
                     <Link to={`/applied/${job._id}`}>
-                      <button className="text-[#262626]/70 group-hover:text-[#74D09D] duration-300 font-semibold">
+                      <button className="text-[#262626]/70 group-hover:text-[#244436] duration-300 font-semibold">
                         <span className="hover:text-[#3BA272] duration-300">
                           Apply Now
                         </span>
@@ -235,7 +235,7 @@ const Career = () => {
                 </h2>
                 <button
                   onClick={() => setModalData(null)}
-                  className="top-0 right-2 absolute bg-[#74D09D] hover:bg-[#3BA272] duration-300 text-[#fff] p-1 text-xl rounded-full"
+                  className="top-0 right-2 absolute bg-[#244436] hover:bg-[#3BA272] duration-300 text-[#fff] p-1 text-xl rounded-full"
                 >
                   <FaXmark />
                 </button>
@@ -246,7 +246,7 @@ const Career = () => {
 
               <div>
                 <Link to={`/applied/${modalData._id}`}>
-                  <h2 className="bg-[#74D09D] text-white px-4 py-2 rounded hover:bg-[#3BA272] duration-300 inline-flex cursor-pointer">
+                  <h2 className="bg-[#244436] text-white px-4 py-2 rounded hover:bg-[#3BA272] duration-300 inline-flex cursor-pointer">
                     Apply Now
                   </h2>
                 </Link>

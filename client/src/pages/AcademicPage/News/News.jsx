@@ -69,7 +69,7 @@ const News = () => {
                 <div className="mt-2">
                   <h2
                     onClick={() => openModal(event)}
-                    className="xl:text-xl text-base font-medium group-hover:text-[#74D09D] duration-300"
+                    className="xl:text-xl text-base font-medium group-hover:text-[#244436] duration-300"
                   >
                     {event.title}
                   </h2>
@@ -80,7 +80,7 @@ const News = () => {
 
                   <button
                     onClick={() => openModal(event)}
-                    className="relative flex items-center origin-right gap-2 py-2 px-4 bg-[#74D09D] rounded text-white font-rajdhani overflow-hidden group cursor-pointer mt-2"
+                    className="relative flex items-center origin-right gap-2 py-2 px-4 bg-[#244436] rounded text-white font-rajdhani overflow-hidden group cursor-pointer mt-2"
                   >
                     <span className="relative z-10 lg:text-base text-sm uppercase">
                       Read more
@@ -98,7 +98,7 @@ const News = () => {
         <div className="flex items-center justify-center mt-8">
           <button
             onClick={handleShowMore}
-            className="px-6 py-3 bg-[#74D09D] text-center uppercase text-[#fff] rounded mt-4"
+            className="px-6 py-3 bg-[#244436] text-center uppercase text-[#fff] rounded mt-4"
           >
             {visibleCount >= news?.data?.length ? "LESS news" : "MORE news"}
           </button>

@@ -24,7 +24,7 @@ const PagesHead = ({ title, subTitle }) => {
         <div className="flex items-center gap-2 pt-2 text-sm">
           <Link
             to="/"
-            className="hover:text-[#74D09D] duration-300 cursor-pointer"
+            className="hover:text-[#244436] duration-300 cursor-pointer"
           >
             Home
           </Link>

@@ -103,12 +103,12 @@ const Service = () => {
 
   const columns = [
     {
-      title: "Title",
+      title: "Product Title",
       dataIndex: "title",
       key: "title",
     },
     {
-      title: "Details",
+      title: "Product Details",
       dataIndex: "details",
       key: "details",
       render: (text, record) => {
@@ -183,7 +183,7 @@ const Service = () => {
   return (
     <div className="bg-white my-6 p-8 rounded-md">
       <div className="flex justify-between mb-4">
-        <h1 className="text-2xl font-bold">All Service</h1>
+        <h1 className="text-2xl font-bold">All Product</h1>
         <Button
           type="primary"
           onClick={() => setIsModalVisible(true)}
@@ -207,12 +207,12 @@ const Service = () => {
         footer={null}
       >
         <Form form={form} onFinish={handleCreateService} layout="vertical">
-          <Form.Item name="title" label="Title" rules={[{ required: true }]}>
+          <Form.Item name="title" label="Product Title" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
           <Form.Item
             name="details"
-            label="Details"
+            label="Product Details"
             // rules={[{ required: true }]}
           >
             <Input />

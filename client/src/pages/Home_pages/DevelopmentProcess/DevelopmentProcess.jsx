@@ -92,7 +92,7 @@ impact."
                       <img
                         className=""
                         src={baseUrl + development.image}
-                        alt="Idea Solution"
+                        alt="Eco comfort socks"
                       />
                     </div>
                   </div>
@@ -115,7 +115,7 @@ impact."
                     </div>
                   </div>
 
-                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#74D09D] xl:rounded-full lg:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-300 ease-in-out"></div>
+                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#244436] xl:rounded-full lg:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-300 ease-in-out"></div>
                 </div>
               </motion.div>
             ))}
@@ -129,7 +129,7 @@ impact."
           <div className="bg-white rounded-lg shadow-lg max-w-lg w-full p-6 relative">
             <button
               onClick={closeModal}
-              className="absolute top-4 right-4 w-[30px] h-[30px] border rounded-full text-sm text-[#262626]/40 hover:bg-[#74D09D] hover:text-[#fff] duration-300 cursor-pointer"
+              className="absolute top-4 right-4 w-[30px] h-[30px] border rounded-full text-sm text-[#262626]/40 hover:bg-[#244436] hover:text-[#fff] duration-300 cursor-pointer"
             >
               ✕
             </button>

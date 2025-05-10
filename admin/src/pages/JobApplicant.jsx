@@ -47,7 +47,7 @@ const JobApplicants = () => {
       key: "email",
     },
     {
-      title: "Brochure",
+      title: "CV/Resume",
       dataIndex: "pdf",
       key: "pdf",
       render: (_, record) =>

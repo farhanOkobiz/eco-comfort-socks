@@ -148,7 +148,7 @@ const Brochure = () => {
 
   const columns = [
     {
-      title: "Title",
+      title: "Heading",
       dataIndex: "title",
       key: "title",
     },
@@ -305,7 +305,7 @@ const Brochure = () => {
   return (
     <div className="w-full bg-white my-6 p-8 rounded-md">
       <div className="flex justify-between mb-4">
-        <h1 className="text-2xl font-bold">All Brochure</h1>
+        <h1 className="text-2xl font-bold">Full Profile</h1>
         <Button
           type="primary"
           onClick={() => setIsModalVisible(true)}
@@ -330,7 +330,7 @@ const Brochure = () => {
         footer={null}
       >
         <Form form={form} onFinish={handleCreateBrochure} layout="vertical">
-          <Form.Item name="title" label="Title" rules={[{ required: true }]}>
+          <Form.Item name="title" label="Heading" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
           <Form.Item

@@ -111,7 +111,7 @@ initiatives, projects, and upcoming events."
                     </p>
                     <button
                       onClick={() => openModal(event)}
-                      className="relative flex items-center origin-right gap-2 py-2 px-4 bg-[#74D09D] rounded text-white font-rajdhani overflow-hidden group cursor-pointer mt-2"
+                      className="relative flex items-center origin-right gap-2 py-2 px-4 bg-[#244436] rounded text-white font-rajdhani overflow-hidden group cursor-pointer mt-2"
                     >
                       <span className="relative z-10 lg:text-base text-sm uppercase">
                         Read more
@@ -129,7 +129,7 @@ initiatives, projects, and upcoming events."
         <div className="flex items-center justify-center mt-8">
           <button
             onClick={handleShowMore}
-            className="px-6 py-3 bg-[#74D09D] hover:bg-[#65e09d] duration-300 text-center uppercase text-[#fff] rounded mt-4"
+            className="px-6 py-3 bg-[#244436] hover:bg-[#65e09d] duration-300 text-center uppercase text-[#fff] rounded mt-4"
           >
             {visibleCount >= events?.data?.length
               ? "LESS EVENTS"

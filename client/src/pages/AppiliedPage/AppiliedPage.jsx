@@ -28,7 +28,7 @@
 //         toast.success("Your message has been sent successfully!", {
 //           position: "top-right",
 //           style: {
-//             background: "#74D09D",
+//             background: "#244436",
 //             color: "#fff",
 //           },
 //         });
@@ -127,7 +127,7 @@
 
 //             <div>
 //               <input
-//                 className="px-2 py-2 border bg-[#74D09D] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
+//                 className="px-2 py-2 border bg-[#244436] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
 //                 type="submit"
 //                 value="Send Resume/CV"
 //               />
@@ -177,7 +177,7 @@ const AppliedPage = () => {
         toast.success("Your message has been sent successfully!", {
           position: "top-right",
           style: {
-            background: "#74D09D",
+            background: "#244436",
             color: "#fff",
           },
         });
@@ -277,7 +277,7 @@ const AppliedPage = () => {
 
             <div>
               <input
-                className="px-2 py-2 border bg-[#74D09D] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
+                className="px-2 py-2 border bg-[#244436] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
                 type="submit"
                 value="Send Resume/CV"
               />

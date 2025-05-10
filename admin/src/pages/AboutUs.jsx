@@ -118,7 +118,7 @@ const AboutUs = () => {
 
   const columns = [
     {
-      title: "Title",
+      title: "Heading",
       dataIndex: "title",
       key: "title",
     },
@@ -293,7 +293,7 @@ const AboutUs = () => {
         footer={null}
       >
         <Form form={form} onFinish={handleCreateAboutUs} layout="vertical">
-          <Form.Item name="title" label="Title" rules={[{ required: true }]}>
+          <Form.Item name="title" label="Heading" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
           <Form.Item

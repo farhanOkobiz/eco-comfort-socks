@@ -88,12 +88,12 @@ const Careers = () => {
 
   const columns = [
     {
-      title: "Title",
+      title: "Circular Name",
       dataIndex: "title",
       key: "title",
     },
     {
-      title: "Details",
+      title: "Circular Details",
       dataIndex: "details",
       key: "details",
       render: (text, record) => {
@@ -179,12 +179,12 @@ const Careers = () => {
         footer={null}
       >
         <Form form={form} onFinish={handleCreateCareer} layout="vertical">
-          <Form.Item name="title" label="Title" rules={[{ required: true }]}>
+          <Form.Item name="title" label="Circular Name" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
           <Form.Item
             name="details"
-            label="Details"
+            label="Circular Details"
             // rules={[{ required: true }]}
           >
             <Input />

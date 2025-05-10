@@ -104,12 +104,12 @@ const Banners = () => {
 
   const columns = [
     {
-      title: "Title",
+      title: "Headline",
       dataIndex: "title",
       key: "title",
     },
     {
-      title: "Details",
+      title: "Description",
       dataIndex: "details",
       key: "details",
       render: (text, record) => {
@@ -212,12 +212,12 @@ const Banners = () => {
         footer={null}
       >
         <Form form={form} onFinish={handleCreateBanner} layout="vertical">
-          <Form.Item name="title" label="Title" rules={[{ required: true }]}>
+          <Form.Item name="title" label="Headline" rules={[{ required: true }]}>
             <Input />
           </Form.Item>
           <Form.Item
             name="details"
-            label="Details"
+            label="Description"
             // rules={[{ required: true }]}
           >
             <Input />

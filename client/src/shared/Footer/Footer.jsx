@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/logo/idea_tree.png";
+import logo from "../../assets/logo/eco_comfort.png";
 import { navItems } from "../../utilits/navItems";
 import SocialIcon from "../SocialIcon/SocialIcon";
 import Map from "../../utilits/Map";
@@ -41,8 +41,7 @@ const Footer = () => {
                 className="h-20 w-40 bg-gray-200 p-2 rounded-lg"
               />
               <p className="hover:text-[#fff] duration-300 cursor-pointer mr-12">
-                Flat No: 3C, House No: 6/11, Block: E, Lalmatia, Mohammadpur,
-                Dhaka 1207
+                Zirani Bazar, BKSP - 1349, Ashulia, Savar, Dhaka
               </p>
             </div>
             <div className="flex flex-col gap-6 mt-10 xl:ml-0 lg:ml-12">
@@ -71,7 +70,7 @@ const Footer = () => {
 
           {/* Footer Banner */}
           {/* {open && (
-            <div className="bg-[#74D09D] fixed bottom-0 left-0 right-0 text-center z-[99] w-full py-10">
+            <div className="bg-[#244436] fixed bottom-0 left-0 right-0 text-center z-[99] w-full py-10">
               <div
                 className="w-[30px] h-[30px] bg-[#fff] rounded-full flex items-center justify-center xl:ml-20 lg:ml-20 ml-[350px] xl:mt-[-12px] lg:mt-[-12px] mt-[-50px] cursor-pointer"
                 onClick={() => setOpen(false)}
@@ -79,14 +78,14 @@ const Footer = () => {
                 <FaXmark className="text-[#262626]" />
               </div>
               <h2 className="lg:text-xl text-base">
-                Right Now IdeaTree Website is Under Construction
+                Right Now Eco Comfort Socks Website is Under Construction
               </h2>
             </div>
           )} */}
         </div>
       </div>
       <div className="bg-[#2e3b2c] py-4 flex flex-wrap items-center justify-between 2xl:px-80 xl:px-28 lg:px-20 md:px-12 px-8 mx-auto text-[#fff]">
-        <p>ideaTree © 2025. All Rights Reserved.</p>
+        <p>ECO COMFORT SOCKS LIMITED © 2025. All Rights Reserved.</p>
         <p className="flex gap-1">
           <span>Developed by</span>
           <a

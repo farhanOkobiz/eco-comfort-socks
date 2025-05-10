@@ -10,7 +10,7 @@ import { HiOutlineArrowLongLeft } from "react-icons/hi2";
 const CustomPrevArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute group overflow-hidden top-1/2 lg:left-[-15px] left-[-15px] transform -translate-y-1/2 z-10 lg:w-[40px] lg:h-[40px] w-[40px] h-[40px] border border-[#fff] bg-[#74D09D] duration-300 rounded-full flex  items-center justify-center group"
+    className="absolute group overflow-hidden top-1/2 lg:left-[-15px] left-[-15px] transform -translate-y-1/2 z-10 lg:w-[40px] lg:h-[40px] w-[40px] h-[40px] border border-[#fff] bg-[#244436] duration-300 rounded-full flex  items-center justify-center group"
     style={{ boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)" }}
   >
     <HiOutlineArrowLongLeft className="lg:text-2xl md:text-xl text-[#fff] z-[60] duration-300" />
@@ -21,7 +21,7 @@ const CustomPrevArrow = ({ onClick }) => (
 const CustomNextArrow = ({ onClick }) => (
   <button
     onClick={onClick}
-    className="absolute group overflow-hidden top-1/2 lg:right-[-15px] right-[-15px] transform -translate-y-1/2 z-10 lg:w-[40px] lg:h-[40px] w-[40px] h-[40px] border border-[#fff] bg-[#74D09D] duration-300 rounded-full flex  items-center justify-center group"
+    className="absolute group overflow-hidden top-1/2 lg:right-[-15px] right-[-15px] transform -translate-y-1/2 z-10 lg:w-[40px] lg:h-[40px] w-[40px] h-[40px] border border-[#fff] bg-[#244436] duration-300 rounded-full flex  items-center justify-center group"
     style={{ boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)" }}
   >
     <HiOutlineArrowLongRight className="lg:text-2xl md:text-xl text-[#fff] relative z-[99] duration-300" />

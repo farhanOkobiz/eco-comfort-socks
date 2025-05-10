@@ -25,14 +25,10 @@ const Gallary = () => {
         <SectionHead
           alDesign="item-center justify-center text-center"
           centerDesign="item-center flex justify-center text-center"
-          subTitle="Latest Activities"
-          title="A Glimpse of Our Work"
-          shortInfo="Explore our latest projects,
-events, and initiatives as we
-redefine industry standards and
-drive sustainable
-transformation."
-        ></SectionHead>
+          subTitle="LATEST ACTIVITIES"
+          title="Behind the Seams of Innovation"
+          shortInfo="Take a closer look at our latest productions, trade fair participations, factory upgrades, and innovative processes as we push the boundaries of quality and efficiency in sock manufacturing."
+        />
       </div>
 
       <div className="mt-12 flex flex-col gap-4">

@@ -8,15 +8,15 @@ const ServiceSideBar = () => {
 
   return (
     <div>
-      <div className="bg-[#F5FDF8] rounded border-l-2 border-[#74D09D]  py-4">
-        <h2 className="text-xl px-4 font-semibold text-[#74D09D]">services</h2>
+      <div className="bg-[#F5FDF8] rounded border-l-2 border-[#244436]  py-4">
+        <h2 className="text-xl px-4 font-semibold text-[#244436]">services</h2>
 
         <div className="mt-8 flex flex-col gap-2">
           {services?.data?.result?.map((service) => (
             <div key={service._id}>
               <Link to={`/service/${service._id}`}>
-                <div className="bg-[#74D09D] w-full px-4 py-2 inline-flex rounded-r relative group overflow-hidden cursor-pointer">
-                  <span className="group-hover:text-[#fff] z-10 duration-300 text-[#262626]/60">
+                <div className="bg-[#244436] w-full px-4 py-2 inline-flex rounded-r relative group overflow-hidden cursor-pointer ">
+                  <span className="group-hover:text-[#fff] z-10 duration-300 text-gray-300">
                     {service.title}
                   </span>
 
@@ -29,12 +29,12 @@ const ServiceSideBar = () => {
       </div>
 
       <div className="bg-[#F5FDF8] mt-8 rounded flex items-center gap-4 px-4 py-2">
-        <div className="px-2 py-2 rounded bg-[#74D09D] text-xl font-semibold text-[#fff]">
+        <div className="px-2 py-2 rounded bg-[#244436] text-xl font-semibold text-[#fff]">
           <MdLocalPhone />
         </div>
         <div>
           <p>Contact Us</p>
-          <p className="text-[#262626]/80">+8801857241424</p>
+          <p className="text-[#262626]/80"></p>
         </div>
       </div>
 

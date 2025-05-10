@@ -51,14 +51,14 @@ const DetailsLayout = () => {
           <div className="flex flex-wrap items-center gap-2 pt-2 text-sm capitalize">
             <Link
               to="/"
-              className="hover:text-[#74D09D] duration-300 cursor-pointer"
+              className="hover:text-[#244436] duration-300 cursor-pointer"
             >
               Home
             </Link>
             <p>/</p>
             <Link
-              to="/services"
-              className="hover:text-[#74D09D] duration-300 cursor-pointer"
+              to="/products"
+              className="hover:text-[#244436] duration-300 cursor-pointer"
             >
               <p>Our services</p>
             </Link>

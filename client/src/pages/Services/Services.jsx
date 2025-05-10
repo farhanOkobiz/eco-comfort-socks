@@ -30,7 +30,7 @@ const Services = () => {
 
   // Placeholder skeleton loader
   const PlaceholderCard = () => (
-    <div className="border border-[#74D09D]/20 p-2 rounded cursor-pointer animate-pulse">
+    <div className="border border-[#244436]/20 p-2 rounded cursor-pointer animate-pulse">
       <div className="lg:h-[220px] md:h-[300px] w-full bg-gray-200 rounded"></div>
       <div className="mt-4">
         <div className="h-4 bg-gray-200 rounded w-3/4"></div>
@@ -51,11 +51,11 @@ const Services = () => {
       </div>
       <div className="container">
         <div>
-          <p className="text-base font-medium text-[#74D09D] uppercase">
-            our services
+          <p className="text-base font-medium text-[#244436] uppercase">
+            our products
           </p>
           <h2 className="text-2xl font-medium mt-2 text-[#262626]/80">
-            Comprehensive Solutions for Sustainable Growth
+          End-to-End Sock Manufacturing Solutions for Sustainable Growth
           </h2>
         </div>
 
@@ -76,7 +76,7 @@ const Services = () => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
                   >
-                    <div className="border border-[#74D09D]/20 group-hover:border-[#74D09D] group-hover:shadow p-2 rounded cursor-pointer group">
+                    <div className="border border-[#244436]/20 group-hover:border-[#244436] group-hover:shadow p-2 rounded cursor-pointer group">
                       <Link to={`/service/${service._id}`}>
                         <div className="lg:h-[220px] md:h-[300px] w-full rounded overflow-hidden relative">
                           <img
@@ -84,12 +84,12 @@ const Services = () => {
                             src={baseUrl + service.image}
                             alt=""
                           />
-                          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#74D09D] rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-300 ease-in-out"></div>
+                          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#244436] rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-300 ease-in-out"></div>
                         </div>
                       </Link>
                       <div className="px-2 mt-4">
                         <Link to={`/service/${service._id}`}>
-                          <h3 className="font-semibold group-hover:text-[#74D09D] duration-300 line-clamp-1">
+                          <h3 className="font-semibold group-hover:text-[#244436] duration-300 line-clamp-1">
                             {service.title}
                           </h3>
                           <p className="line-clamp-4 mt-2 text-[#262626]/60 group-hover:text-[#262626] duration-300">
@@ -97,7 +97,7 @@ const Services = () => {
                           </p>
                           <div className="py-4">
                             <Link to={`/service/${service._id}`}>
-                              <button className="border relative group  border-[#74D09D]/20 text-[#74D09D] px-4 py-2 rounded">
+                              <button className="border relative group  border-[#244436]/20 text-[#244436] px-4 py-2 rounded">
                                 <span className="group-hover:text-[#fff] relative z-10">
                                   Read More
                                 </span>
@@ -112,7 +112,7 @@ const Services = () => {
                 ))}
         </div>
       </div>
-      <DevelopmentProcess />
+      {/* <DevelopmentProcess /> */}
     </div>
   );
 };

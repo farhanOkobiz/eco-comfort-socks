@@ -8,17 +8,17 @@ export const navItems = [
       href: "/about",
     },
     {
-      label: "Services",
-      href: "/services",
+      label: "Products",
+      href: "/products",
     },
   
+    // {
+    //   label: "Experiences",
+    //   href: "/experience",
+    // },
     {
-      label: "Experiences",
-      href: "/experience",
-    },
-    {
-      label: "Brochure",
-      href: "/brochure",
+      label: "Profile",
+      href: "/profile",
     },
     {
       label: "Gallery",
@@ -26,14 +26,14 @@ export const navItems = [
     },
    
     
-    {
-      label: "Academy",
-      href: "/academy",
-    },
     // {
-    //   label: "Career",
-    //   href: "/career",
+    //   label: "Academy",
+    //   href: "/academy",
     // },
+    {
+      label: "Career",
+      href: "/career",
+    },
     {
       label: "Contact",
       href: "/contact",

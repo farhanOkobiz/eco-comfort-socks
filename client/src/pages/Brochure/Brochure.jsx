@@ -66,7 +66,7 @@ export const Brochure = () => {
                 <div key={brochure._id}>
                   <div className="grid lg:grid-cols-2 gap-4">
                     <div>
-                      <h2 className="text-lg font-semibold text-[#74D09D] capitalize">
+                      <h2 className="text-lg font-semibold text-[#244436] capitalize">
                         {brochure.title}
                       </h2>
                       {/* <p className="mt-4 leading-relaxed text-[#262626]/80">
@@ -83,7 +83,7 @@ export const Brochure = () => {
                             onClick={() =>
                               setShowFullDescription(!showFullDescription)
                             }
-                            className="text-[#74D09D] opacity-0 group-hover:opacity-100 duration-300"
+                            className="text-[#244436] opacity-0 group-hover:opacity-100 duration-300"
                           >
                             {showFullDescription ? (
                               <div className="flex items-center gap-1">
@@ -109,7 +109,7 @@ export const Brochure = () => {
                         {detail.length > 200 && (
                           <button
                             onClick={() => setShowFullDatails(!showFullDatails)}
-                            className="text-[#74D09D] opacity-0 group-hover:opacity-100 duration-300"
+                            className="text-[#244436] opacity-0 group-hover:opacity-100 duration-300"
                           >
                             {showFullDatails ? (
                               <div className="flex items-center gap-1">
@@ -133,7 +133,7 @@ export const Brochure = () => {
                           target={brochure?.pdf ? "_blank" : undefined}
                           className={`relative inline-flex items-center origin-right gap-2 py-3 px-4 rounded font-rajdhani overflow-hidden group ${
                             brochure?.pdf
-                              ? "bg-[#74D09D] text-white cursor-pointer"
+                              ? "bg-[#244436] text-white cursor-pointer"
                               : "bg-gray-300 text-gray-500 cursor-not-allowed"
                           }`}
                           aria-disabled={!brochure?.pdf}
@@ -151,7 +151,7 @@ export const Brochure = () => {
 
                   <div className="grid xl:grid-cols-3 lg:grid-cols-2 gap-2 mt-12">
                     <div className="bg-[#F5FDF8] px-8 py-8 rounded">
-                      <p className="text-xl text-[#74D09D]">
+                      <p className="text-xl text-[#244436]">
                         <FaQuoteLeft />
                       </p>
                       <div className="mt-4">

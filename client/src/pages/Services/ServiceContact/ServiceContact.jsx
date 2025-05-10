@@ -18,7 +18,7 @@
 //         toast.success("Your message has been sent successfully!", {
 //           position: "top-right",
 //           style: {
-//             background: "#74D09D",
+//             background: "#244436",
 //             color: "#fff",
 //           },
 //         });
@@ -46,7 +46,7 @@
 //         <div>
 //           <input
 //             {...register("name", { required: true })}
-//             className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+//             className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
 //             type="text"
 //             placeholder="Name"
 //           />
@@ -61,7 +61,7 @@
 //               required: true,
 //               pattern: /^[0-9]{11}$/,
 //             })}
-//             className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+//             className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
 //             type="tel"
 //             placeholder="Phone"
 //           />
@@ -81,7 +81,7 @@
 //               required: true,
 //               pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
 //             })}
-//             className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+//             className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
 //             type="email"
 //             placeholder="Email"
 //           />
@@ -98,7 +98,7 @@
 //         <div>
 //           <textarea
 //             {...register("message", { required: true })}
-//             className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+//             className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
 //             placeholder="Your messages"
 //             cols="30"
 //             rows="6"
@@ -110,7 +110,7 @@
 
 //         <div>
 //           <input
-//             className="px-2 py-2 border bg-[#74D09D] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
+//             className="px-2 py-2 border bg-[#244436] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
 //             type="submit"
 //             value="GET QUOTE"
 //           />
@@ -146,7 +146,7 @@ const ServiceContact = () => {
         toast.success("Your message has been sent successfully!", {
           position: "top-right",
           style: {
-            background: "#74D09D",
+            background: "#244436",
             color: "#fff",
           },
         });
@@ -186,7 +186,7 @@ const ServiceContact = () => {
             <div>
               <input
                 {...register("name", { required: true })}
-                className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+                className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
                 type="text"
                 placeholder="Name"
               />
@@ -201,7 +201,7 @@ const ServiceContact = () => {
                   required: true,
                   pattern: /^[0-9]{11}$/,
                 })}
-                className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+                className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
                 type="tel"
                 placeholder="Phone"
               />
@@ -221,7 +221,7 @@ const ServiceContact = () => {
                   required: true,
                   pattern: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                 })}
-                className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+                className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
                 type="email"
                 placeholder="Email"
               />
@@ -238,7 +238,7 @@ const ServiceContact = () => {
             <div>
               <textarea
                 {...register("message", { required: true })}
-                className="px-2 py-2 border border-[#74D09D] rounded bg-[#F5FDF8] outline-none w-full"
+                className="px-2 py-2 border border-[#244436] rounded bg-[#F5FDF8] outline-none w-full"
                 placeholder="Your messages"
                 cols="30"
                 rows="6"
@@ -250,7 +250,7 @@ const ServiceContact = () => {
 
             <div>
               <input
-                className="px-2 py-2 border bg-[#74D09D] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
+                className="px-2 py-2 border bg-[#244436] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
                 type="submit"
                 value="GET QUOTE"
               />

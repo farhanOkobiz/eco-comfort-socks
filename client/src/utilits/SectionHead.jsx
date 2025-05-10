@@ -10,8 +10,8 @@ const SectionHead = ({
   return (
     <div className={`flex flex-col gap-4 ${alDesign}`}>
       <div className={`flex items-end ${centerDesign}`}>
-        {/* <p className="w-[30px] h-[2px] bg-[#74D09D]"></p> */}
-        <p className="text-base font-semibold text-[#74D09D] uppercase">
+        {/* <p className="w-[30px] h-[2px] bg-[#244436]"></p> */}
+        <p className="text-base font-semibold text-[#244436] uppercase">
           {subTitle}
         </p>
       </div>

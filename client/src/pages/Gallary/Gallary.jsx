@@ -31,7 +31,7 @@ export const GalleryPage = () => {
             <div key={gallery._id}>
               <div className="grid lg:grid-cols-2 gap-8">
                 <div>
-                  <h2 className="text-lg font-semibold text-[#74D09D]">
+                  <h2 className="text-lg font-semibold text-[#244436]">
                     {gallery.title}
                   </h2>
                   {/* <p className="mt-4 leading-relaxed text-[#262626]/80">
@@ -46,7 +46,7 @@ export const GalleryPage = () => {
                         onClick={() =>
                           setShowFullDescription(!showFullDescription)
                         }
-                        className="text-[#74D09D]  group-hover:opacity-100 duration-300"
+                        className="text-[#244436]  group-hover:opacity-100 duration-300"
                       >
                         {showFullDescription ? (
                           <div className="flex items-center gap-1">
@@ -69,7 +69,7 @@ export const GalleryPage = () => {
                     {description.length > 200 && (
                       <button
                         onClick={() => setShowFullDatails(!showFullDatails)}
-                        className="text-[#74D09D]  group-hover:opacity-100 duration-300"
+                        className="text-[#244436]  group-hover:opacity-100 duration-300"
                       >
                         {showFullDatails ? (
                           <div className="flex items-center gap-1">
@@ -107,7 +107,7 @@ export const GalleryPage = () => {
               ))}
               <motion.div
                 layout
-                className="absolute bg-[#74D09D] rounded-full h-full w-[50%]"
+                className="absolute bg-[#244436] rounded-full h-full w-[50%]"
                 style={{
                   left: activeTab === "images" ? "0%" : "50%",
                   zIndex: 0,

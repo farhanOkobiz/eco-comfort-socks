@@ -97,7 +97,7 @@ const About = () => {
                     title={
                       <span>
                         {about.title.split(" ").slice(0, -1).join(" ")}{" "}
-                        <span className="text-[#74D09D]">
+                        <span className="text-[#244436]">
                           {about.title.split(" ").slice(-1)}
                         </span>
                       </span>
@@ -111,74 +111,102 @@ const About = () => {
                       <p className="relative">
                         {about.details.slice(240, 419) ||
                           "Let's Talk about Company"}
-                        <FixModals about={about}></FixModals>
+                        <FixModals type="about" about={about}></FixModals>
                       </p>
                     </div>
 
                     {/* mission, vision, value */}
-                    <div className="flex flex-col gap-3 mt-8">
+                    <div className="flex flex-col gap-3 mt-8 relative">
+                      {/* mission */}
                       <motion.div
                         ref={ref}
                         initial="hidden"
                         animate={missionControls}
                         variants={cardVariants}
                         custom={index}
-                        className="bg-[#CDF5DD]/50 relative overflow-hidden group cursor-pointer border flex lg:flex-row md:flex-row flex-col items-center gap-2 xl:rounded-full lg:rounded-full md:rounded-full rounded px-4 py-2"
+                        className="bg-[#4F6F5E]/50 relative overflow-hidden group cursor-pointer border flex lg:flex-row md:flex-row flex-col items-center gap-2 xl:rounded-full lg:rounded-full md:rounded-full rounded px-4 py-2"
                       >
                         <img
                           src={mission}
                           alt="mission"
-                          className="z-10 lg:flex md:flex hidden"
+                          className="z-[3] w-28 lg:flex md:flex hidden"
                         />
-                        <p className="text-[#262626]/80 group-hover:text-[#fff] duration-300 z-10">
-                          <span className="font-semibold group-hover:text-[#262626]">
-                            Mission:{" "}
-                          </span>
-                          {about.mission}
-                        </p>
-                        <div className="absolute inset-0 w-full h-full bg-[#74D09D] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-700 ease-in-out"></div>
+
+                        <div className="text-[#262626]/80 group  duration-300 z-[3]">
+                          <p className="">
+                            <span className="font-semibold group-hover:text-[#fff]">
+                              Mission:{" "}
+                            </span>
+                            <span className="group-hover:text-[#fff]">
+                              {about.mission.slice(0, 250)}
+                            </span>
+                          </p>
+                          {about.mission.length > 250 && (
+                            <FixModals type="mission" about={about}></FixModals>
+                          )}
+                        </div>
+                        <div className="absolute inset-0 w-full h-full bg-[#244436] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-700 ease-in-out z-[2]"></div>
                       </motion.div>
+
+                      {/* Vision */}
+
                       <motion.div
                         ref={ref}
                         initial="hidden"
                         animate={visionControls}
                         variants={cardVariants}
-                        custom={index + 1} // Adjust for staggered delay
-                        className="bg-[#DDEBB0]/50 relative overflow-hidden group cursor-pointer border flex items-center gap-2 xl:rounded-full lg:rounded-full md:rounded-full rounded px-4 py-2"
+                        custom={index + 1}
+                        className="hover:z-10 bg-[#DDEBB0]/50 relative overflow-hidden group cursor-pointer border flex items-center gap-2 xl:rounded-full lg:rounded-full md:rounded-full rounded px-4 py-2"
                       >
                         <img
                           src={vision}
                           alt="vision"
-                          className="z-10 lg:flex md:flex hidden"
+                          className="w-28 lg:flex md:flex hidden"
                         />
-                        <p className="text-[#262626]/80 group-hover:text-[#fff] duration-300 z-10">
-                          <span className="font-semibold group-hover:text-[#262626]">
-                            Vision:{" "}
-                          </span>
-                          {about.vision}
-                        </p>
-                        <div className="absolute inset-0 w-full h-full bg-[#74D09D] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-700 ease-in-out"></div>
+                        <div className=" text-[#262626]/80 group  duration-300">
+                          <p className="">
+                            <span className="font-semibold group-hover:text-[#fff]">
+                              Vision:{" "}
+                            </span>
+                            <span className="group-hover:text-[#fff]">
+                              {about.vision.slice(0, 250)}
+                            </span>
+                          </p>
+                          {about.vision.length > 250 && (
+                            <FixModals type="vision" about={about}></FixModals>
+                          )}
+                        </div>
+                        <div className="absolute inset-0 -z-10 w-full h-full bg-[#244436] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-700 ease-in-out"></div>
                       </motion.div>
+
+                      {/* value */}
                       <motion.div
                         ref={ref}
                         initial="hidden"
                         animate={valueControls}
                         variants={cardVariants}
-                        custom={index + 2} // Adjust for staggered delay
-                        className="bg-[#A6C291]/50 relative overflow-hidden group cursor-pointer border flex items-center gap-2 xl:rounded-full lg:rounded-full md:rounded-full rounded px-4 py-2"
+                        custom={index + 2}
+                        className="hover:z-10 bg-[#A6C291]/50 relative overflow-hidden group cursor-pointer border flex items-center gap-2 xl:rounded-full lg:rounded-full md:rounded-full rounded px-4 py-2"
                       >
                         <img
                           src={value}
                           alt="value"
-                          className="z-10 lg:flex md:flex hidden"
+                          className="w-28 lg:flex md:flex hidden"
                         />
-                        <p className="text-[#262626]/80 group-hover:text-[#fff] duration-300 z-10">
-                          <span className="font-semibold group-hover:text-[#262626]">
-                            Value:{" "}
-                          </span>
-                          {about.value}
-                        </p>
-                        <div className="absolute inset-0 w-full h-full bg-[#74D09D] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-700 ease-in-out"></div>
+                        <div className="text-[#262626]/80 group  duration-300">
+                          <p className="">
+                            <span className="font-semibold group-hover:text-[#fff]">
+                              Value:{" "}
+                            </span>
+                            <span className="group-hover:text-[#fff]">
+                              {about.value.slice(0, 250)}
+                            </span>
+                          </p>
+                          {about.value.length > 250 && (
+                            <FixModals type="value" about={about}></FixModals>
+                          )}
+                        </div>
+                        <div className="absolute -z-10 inset-0 w-full h-full bg-[#244436] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-700 ease-in-out"></div>
                       </motion.div>
                     </div>
                   </div>

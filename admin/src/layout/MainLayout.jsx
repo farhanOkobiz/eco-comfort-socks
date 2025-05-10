@@ -6,7 +6,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { menuItems } from "../shared/routeItems";
 import { logoutUser } from "../utils/Slices/userSlices";
-import logo from "../assets/logo-idea-tree-01.png";
+import logo from "../assets/eco logo-01.png";
 
 const { Header, Sider, Content } = Layout;
 
@@ -15,27 +15,34 @@ const MainLayout = () => {
   const [selectedMenuItem, setSelectedMenuItem] = useState(
     localStorage.getItem("selectedMenuItem") || "1"
   );
+  const [openKeys, setOpenKeys] = useState([]); // for handling open submenus
   const [hideLayout, setHideLayout] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleMenuItemClick = (key) => {
+  const handleMenuItemClick = ({ key }) => {
     setSelectedMenuItem(key);
     localStorage.setItem("selectedMenuItem", key);
     navigate(`/dashboard/${key}`);
   };
 
+  const handleOpenChange = (keys) => {
+    // Only keep the last opened submenu
+    setOpenKeys(keys.length > 0 ? [keys[keys.length - 1]] : []);
+  };
+
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
     if (!user) navigate("/");
-    if (
-      new Date().getTime() -
-        parseInt(localStorage.getItem("lastAccessTime"), 10) >
-      7 * 24 * 60 * 60 * 1000
-    ) {
+
+    const lastAccessTime = localStorage.getItem("lastAccessTime");
+    const now = new Date().getTime();
+
+    if (lastAccessTime && now - parseInt(lastAccessTime, 10) > 7 * 24 * 60 * 60 * 1000) {
       setHideLayout(true); // Hide layout after 7 days
     }
-    localStorage.setItem("lastAccessTime", new Date().getTime().toString());
+
+    localStorage.setItem("lastAccessTime", now.toString());
   }, [navigate]);
 
   const handleLogout = () => {
@@ -47,7 +54,7 @@ const MainLayout = () => {
   };
 
   return (
-    <Layout hasSider className="">
+    <Layout hasSider>
       {!hideLayout && (
         <Sider
           trigger={null}
@@ -59,7 +66,7 @@ const MainLayout = () => {
             className={`text-black mx-auto font-bold text-2xl text-center rounded-full mt-10 mb-5 ${
               collapsed
                 ? `w-[50px] h-[20px] leading-[50px]`
-                : `w-[110px] h-[50px] leading-[110px]`
+                : `w-[110px] h-[70px] leading-[110px]`
             }`}
           >
             <img src={logo} alt="Logo" />
@@ -69,12 +76,10 @@ const MainLayout = () => {
             className="bg-secondary pb-10 h-[calc(100vh-120px)] overflow-y-auto"
             mode="inline"
             selectedKeys={[selectedMenuItem]}
-            onClick={({ key }) => handleMenuItemClick(key)}
-            items={menuItems.map((item) => ({
-              key: item.key,
-              label: item.label,
-              icon: item.icon ? <item.icon /> : null,
-            }))}
+            openKeys={openKeys}
+            onOpenChange={handleOpenChange}
+            onClick={handleMenuItemClick}
+            items={menuItems}
           />
         </Sider>
       )}

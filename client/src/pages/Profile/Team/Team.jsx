@@ -40,14 +40,14 @@
 //               </div>
 //               <div className="absolute bg-[#fff] bottom-[0%] left-[50%] translate-x-[-50%] translate-y-[0%] group-hover:translate-y-[-20%] duration-300 w-[80%] side_border">
 //                 <div className="text-center py-4">
-//                   <h2 className="text-xl font-semibold group-hover:text-[#74D09D] duration-300">
+//                   <h2 className="text-xl font-semibold group-hover:text-[#244436] duration-300">
 //                     {team.name}
 //                   </h2>
 //                   <p className="text-sm text-[#262626]/60">
 //                     {team.designation}
 //                   </p>
 //                 </div>
-//                 <div className="bottom-0 absolute right-0 w-[25px] h-[25px] bg-[#74D09D] group-hover:bg-[#262626] duration-300 text-[#fff] flex items-center justify-center">
+//                 <div className="bottom-0 absolute right-0 w-[25px] h-[25px] bg-[#244436] group-hover:bg-[#262626] duration-300 text-[#fff] flex items-center justify-center">
 //                   <p className="text-sm">
 //                     <FaUser />
 //                   </p>
@@ -56,7 +56,7 @@
 //                   className="right-[0px] top-[12px] group-hover:top-[-25px] absolute duration-300 opacity-0 group-hover:opacity-100 cursor-pointer"
 //                   onClick={() => setSelectedTeam(team)}
 //                 >
-//                   <p className="text-sm inline-flex bg-[#74D09D] text-[#fff] px-4 py-[2px]">
+//                   <p className="text-sm inline-flex bg-[#244436] text-[#fff] px-4 py-[2px]">
 //                     MORE INFO
 //                   </p>
 //                 </div>
@@ -130,9 +130,8 @@ const Team = () => {
           alDesign="item-center justify-center text-center"
           centerDesign="item-center flex justify-center text-center"
           subTitle="OUR TEAM"
-          title="Expertise, Innovation, and Dedication in Action"
-          shortInfo="Our team of industry experts, strategists, and innovators is committed to driving sustainable growth and
-impactful solutions across industries."
+          title="Expertise, Innovation, and Dedication in Every Stitch"
+          shortInfo="Our team of industry experts, designers, and production specialists is committed to driving sustainable growth and delivering impactful sock solutions for clients across various markets."
         />
       </div>
 
@@ -149,14 +148,14 @@ impactful solutions across industries."
               </div>
               <div className="absolute bg-[#fff] bottom-[0%] left-[50%] translate-x-[-50%] translate-y-[0%] group-hover:translate-y-[-20%] duration-300 w-[80%] side_border">
                 <div className="text-center py-4">
-                  <h2 className="text-xl font-semibold group-hover:text-[#74D09D] duration-300">
+                  <h2 className="text-xl font-semibold group-hover:text-[#244436] duration-300">
                     {team.name}
                   </h2>
                   <p className="text-sm text-[#262626]/60">
                     {team.designation}
                   </p>
                 </div>
-                <div className="bottom-0 absolute right-0 w-[25px] h-[25px] bg-[#74D09D] group-hover:bg-[#262626] duration-300 text-[#fff] flex items-center justify-center">
+                <div className="bottom-0 absolute right-0 w-[25px] h-[25px] bg-[#244436] group-hover:bg-[#262626] duration-300 text-[#fff] flex items-center justify-center">
                   <p className="text-sm">
                     <FaUser />
                   </p>
@@ -165,7 +164,7 @@ impactful solutions across industries."
                   className="right-[0px] top-[12px] group-hover:top-[-25px] absolute duration-300 opacity-0 group-hover:opacity-100 cursor-pointer"
                   onClick={() => setSelectedTeam(team)}
                 >
-                  <p className="text-sm inline-flex bg-[#74D09D] text-[#fff] px-4 py-[2px]">
+                  <p className="text-sm inline-flex bg-[#244436] text-[#fff] px-4 py-[2px]">
                     MORE INFO
                   </p>
                 </div>

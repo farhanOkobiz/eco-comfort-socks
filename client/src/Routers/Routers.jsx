@@ -14,6 +14,7 @@ import { About } from "../pages/Profile/About";
 import Academic from "../pages/AcademicPage/Academic/Academic";
 
 import AppiliedPage from "../pages/AppiliedPage/AppiliedPage";
+import Career from "../pages/Career/Career";
 
 export const router = createBrowserRouter([
   {
@@ -25,14 +26,14 @@ export const router = createBrowserRouter([
       { path: "/experience", element: <Experience /> },
       { path: "/gallery", element: <GalleryPage /> },
       { path: "/about", element: <About /> },
-      { path: "/brochure", element: <Brochure /> },
-      { path: "/academy", element: <Academic /> },
-      // { path: "/career", element: <Career /> },
+      { path: "/profile", element: <Brochure /> },
+      // { path: "/academy", element: <Academic /> },
+      { path: "/career", element: <Career /> },
       { path: "/contact", element: <Contact /> },
       { path: "/applied/:id", element: <AppiliedPage /> },
 
       {
-        path: "/services",
+        path: "/products",
         element: <Services />,
       },
       {

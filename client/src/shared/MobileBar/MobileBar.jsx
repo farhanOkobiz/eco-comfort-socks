@@ -10,9 +10,9 @@ const MobileBar = ({ navItems, setIsOpen, isOpen }) => {
   return (
     <>
       {/* Animated Sidebar */}
-      <div className="fixed h-screen top-0 left-0 z-[999] bg-[#74D09D] lg:w-1/3 md:w-2/3 w-full border-l border-[#A6C291]">
+      <div className="fixed h-screen top-0 left-0 z-[999] bg-[#244436] lg:w-1/3 md:w-2/3 w-full border-l border-[#A6C291]">
         <div
-          className="absolute group right-8 top-8 bg-[#fff] text-[#74D09D] border border-[#A68F7F]/40 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer"
+          className="absolute group right-8 top-8 bg-[#fff] text-[#244436] border border-[#A68F7F]/40 w-12 h-12 rounded-full flex items-center justify-center cursor-pointer"
           onClick={toggleBar}
         >
           <p className="text-2xl group-hover:rotate-45 duration-300">
@@ -27,7 +27,7 @@ const MobileBar = ({ navItems, setIsOpen, isOpen }) => {
                 <li
                   onClick={toggleBar}
                   data-text={navItem.label}
-                  className="md:text-4xl text-3xl font-semibold list-none uppercase animated_click"
+                  className="md:text-4xl text-2xl font-semibold list-none uppercase animated_click"
                 >
                   {navItem.label}
                 </li>

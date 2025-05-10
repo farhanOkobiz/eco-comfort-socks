@@ -53,7 +53,7 @@ const ServiceDetails = () => {
 
       <div className="flex flex-col xl:hidden lg:hidden">
         <div className="bg-[#F5FDF8] mt-8 rounded flex items-center gap-4 px-4 py-2">
-          <div className="px-2 py-2 rounded bg-[#74D09D] text-xl font-semibold text-[#fff]">
+          <div className="px-2 py-2 rounded bg-[#244436] text-xl font-semibold text-[#fff]">
             <MdLocalPhone />
           </div>
           <div>

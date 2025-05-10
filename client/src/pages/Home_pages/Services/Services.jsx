@@ -26,16 +26,16 @@ const Services = () => {
   };
 
   return (
-    <div className="bg-[#CDF5DD]/20">
+    <div className="bg-[#669ca4]/20">
       <div className="container">
         <div className="flex items-center justify-center">
           <SectionHead
             alDesign="item-center justify-center text-center"
             centerDesign="item-center flex justify-center text-center"
-            subTitle="OUR SERVICES"
-            title="Comprehensive Solutions for Sustainable Growth"
-            shortInfo="We provide tailored services in industrial compliance,sustainability, skill development, and business growth—empowering businesses to thrive in an evolving landscape. "
-          ></SectionHead>
+            subTitle="OUR PRODUCTS"
+            title="Premium Sock Solutions for Every Step"
+            shortInfo="We specialize in crafting high-quality, comfortable, and durable socks for all needs—combining innovation, style, and sustainability to support the global apparel market."
+          />
         </div>
 
         <div className="mt-12">
@@ -53,7 +53,7 @@ const Services = () => {
                   variants={variants}
                   className=""
                 >
-                  <div className="flex lg:flex-row md:flex-row flex-col justify-center relative group overflow-hidden items-center gap-4 bg-[#74D09D]/40 py-4 lg:px-4 md:px-4 px-2 lg:rounded-full md:rounded-full rounded duration-500 cursor-pointer">
+                  <div className="flex lg:flex-row md:flex-row flex-col justify-center relative group overflow-hidden items-center gap-4 bg-[#244436]/40 py-4 lg:px-4 md:px-4 px-2 lg:rounded-full md:rounded-full rounded duration-500 cursor-pointer">
                     <div className="w-[150px] h-[150px] lg:rounded-full md:rounded-full rounded border-4 border-[#fff] overflow-hidden">
                       <img
                         className="w-full h-full object-cover z-10"
@@ -62,17 +62,17 @@ const Services = () => {
                       />
                     </div>
 
-                    <div className="lg:w-2/3 md:w-2/3 lg:px-0 md:px-0 px-2 text-[#262626] z-10 flex lg:items-start lg:justify-start md:items-start md:justify-start items-center justify-center flex-col text-center lg:text-start md:text-start">
+                    <div className="lg:w-2/3 md:w-2/3 lg:px-0 md:px-0 px-2 text-white z-10 flex lg:items-start lg:justify-start md:items-start md:justify-start items-center justify-center flex-col text-center lg:text-start md:text-start">
                       <h2 className="font-semibold text-lg line-clamp-1">
                         {service.title}
                       </h2>
-                      <p className="pt-2 text-[#262626]/60 line-clamp-3">
+                      <p className="pt-2 text-gray-200 line-clamp-3">
                         {service.details}..
                       </p>
 
                       <Link
                         to={`/service/${service._id}`}
-                        className="relative inline-flex items-center origin-right gap-2 py-2 px-4 bg-[#74D09D] lg:rounded-full md:rounded-full rounded text-white font-rajdhani overflow-hidden group mt-4 border border-[#262626]/5 hover:border-[#fff]/50 duration-300"
+                        className="relative inline-flex items-center origin-right gap-2 py-2 px-4 bg-[#244436] lg:rounded-full md:rounded-full rounded text-white font-rajdhani overflow-hidden group mt-4 border border-[#262626]/5 hover:border-[#fff]/50 duration-300"
                       >
                         <span className="relative z-10 text-sm ">
                           Read More
@@ -80,7 +80,7 @@ const Services = () => {
                         <div className="absolute inset-0 w-full h-full bg-[#65e09d] lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-300 ease-in-out"></div>
                       </Link>
                     </div>
-                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#74D09D] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-500 ease-in-out"></div>
+                    <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#568ca1] xl:rounded-full lg:rounded-full md:rounded-full rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-500 ease-in-out"></div>
                   </div>
                 </motion.div>
               ))}
@@ -88,21 +88,21 @@ const Services = () => {
 
           <div className="mt-12 flex flex-col justify-center items-center">
             <Link
-              to="/services"
-              className="relative flex items-center origin-right gap-2 py-4 px-6 bg-[#74D09D] rounded-full text-white font-rajdhani overflow-hidden group"
+              to="/products"
+              className="relative flex items-center origin-right gap-2 py-4 px-6 bg-[#244436] rounded-full text-white font-rajdhani overflow-hidden group"
             >
               <span className="relative z-10 tracking-widest lg:text-base text-sm">
-                View All Services
+                View All Products
               </span>
               <div className="absolute inset-0 w-full h-full bg-[#65e09d] rounded origin-right transform scale-x-0 group-hover:scale-x-100 group-hover:origin-left transition-transform duration-300 ease-in-out"></div>
             </Link>
             <p className="mt-4 font-semibold text-[#262626]/60">
-              Need a Custom Project Plan?
+              Need a Custom Socks Plan?
               <Link
                 to="/contact"
-                className="text-[#65E09D] cursor-pointer ml-[2px] hover:text-[#e46565] duration-300"
+                className="text-[#e46565] cursor-pointer ml-[2px] duration-300"
               >
-                Get in touch
+                Contact Us
               </Link>
             </p>
           </div>

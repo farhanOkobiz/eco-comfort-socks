@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../../assets/logo/idea_tree.png";
+import logo from "../../assets/logo/eco_comfort.png";
 import { navItems } from "../../utilits/navItems";
 import { CgMenuLeft } from "react-icons/cg";
 import MobileBar from "../MobileBar/MobileBar";
@@ -40,14 +40,14 @@ const NavBar = () => {
     <div className="relative">
       <div className="flex items-center justify-center relative top-8 z-[999]">
         <div
-          className={`flex items-center justify-between tracking-wide  px-8 py-2  fixed transition-all duration-500 ${
+          className={`flex items-center justify-between tracking-wide px-8 py-3 fixed transition-all duration-500 ${
             scrolled
-              ? "bg-[#fff] shadow-lg border-b border-[#fff]/20 w-full 2xl:px-80 xl:px-40 lg:px-10  py-4"
-              : " 2xl:w-2/3 xl:w-3/4 lg:w-full  md:w-5/6  w-full xl:rounded-full lg:rounded-e md:rounded-full lg:top-8 md:top-8 top-0 border border-[#74D09D]/20 bg-[#fff]"
+              ? "bg-[#fff] shadow-lg border-b border-[#fff]/20 w-full 2xl:px-80 xl:px-40 lg:px-10 py-4 mt-5"
+              : " 2xl:w-2/3 xl:w-3/4 lg:w-full  md:w-5/6  w-full xl:rounded-full lg:rounded-e md:rounded-full lg:top-8 md:top-8 top-0 border border-[#244436]/20 bg-[#fff]"
           }`}
         >
-          <Link to="/" className="w-[90px] h-[60px] cursor-pointer">
-            <img src={logo} alt="IdeaTree logo" className="h-full w-full" />
+          <Link to="/" className="w-24 cursor-pointer">
+            <img src={logo} alt="Eco comfort logo" className="h-full w-full" />
           </Link>
           {/* For Desktop or Laptop Devices */}
           <div className="lg:flex items-center gap-2 hidden">
@@ -60,14 +60,14 @@ const NavBar = () => {
                 <Link
                   to={navItem.href}
                   onClick={() => setSelected(navItem.label)} // Update selected state on click
-                  className="relative px-2 py-2 rounded-full overflow-hidden"
+                  className="relative px-3 py-1 rounded-full overflow-hidden"
                 >
                   {/* Highlight animation */}
                   <AnimatePresence>
                     {(hovered === navItem.label ||
                       selected === navItem.label) && (
                       <motion.div
-                        className="absolute inset-0 bg-[#74D09D] rounded-full"
+                        className="absolute inset-0 bg-[#244436] rounded-full"
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         exit={{ scale: 0.9, opacity: 0 }}
@@ -80,8 +80,8 @@ const NavBar = () => {
                       hovered === navItem.label || selected === navItem.label
                         ? "text-[#fff]" // White text when hovered or selected
                         : scrolled
-                        ? "text-[#74D09D]" // Green text when scrolled
-                        : "text-[#74D09D]" // Default green text
+                        ? "text-[#244436]" // Green text when scrolled
+                        : "text-[#244436]" // Default green text
                     }`}
                   >
                     {navItem.label}
@@ -94,7 +94,7 @@ const NavBar = () => {
           <div
             onClick={handelOpen}
             className={`lg:hidden block ${
-              scrolled ? "text-[#262626]/80" : "text-[#74D09D]"
+              scrolled ? "text-[#262626]/80" : "text-[#244436]"
             }`}
           >
             <CgMenuLeft

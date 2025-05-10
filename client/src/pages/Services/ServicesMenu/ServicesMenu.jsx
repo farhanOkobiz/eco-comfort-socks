@@ -28,7 +28,7 @@ const ServicesMenu = () => {
     <div>
       <div
         onClick={handleOpen}
-        className="w-[40px] h-[40px] z-[99] relative border border-[#74D09D] text-[#74D09D] text-xl flex items-center justify-center mt-[-35px]"
+        className="w-[40px] h-[40px] z-[99] relative border border-[#244436] text-[#244436] text-xl flex items-center justify-center mt-[-35px]"
       >
         <SlMenu />
       </div>
@@ -40,7 +40,7 @@ const ServicesMenu = () => {
               animate="visible"
               exit="hidden"
               variants={slideInVariants}
-              className="mt-4 flex flex-col gap-3 bg-[#fff] py-8 md:px-8 px-4 border border-[#74D09D] shadow rounded md:ml-[-2px]"
+              className="mt-4 flex flex-col gap-3 bg-[#fff] py-8 md:px-8 px-4 border border-[#244436] shadow rounded md:ml-[-2px]"
             >
               <h2 className="text-lg font-semibold pb-2">Services</h2>
               {services?.data?.result?.map((service) => (
@@ -49,7 +49,7 @@ const ServicesMenu = () => {
                     to={`/service/${service._id}`}
                     onClick={handleLinkHidden}
                   >
-                    <div className="bg-[#74D09D] px-4 py-2 inline-flex rounded-r relative group overflow-hidden cursor-pointer">
+                    <div className="bg-[#244436] px-4 py-2 inline-flex rounded-r relative group overflow-hidden cursor-pointer">
                       <span className="group-hover:text-[#fff] z-10 duration-300 text-[#262626]/60">
                         {service.title}
                       </span>

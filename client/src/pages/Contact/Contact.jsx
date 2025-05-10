@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // Import Framer Motion
 import PagesHead from "../../utilits/PagesHead";
 import TabTitle from "../../utilits/TabTitle";
 import "./Contact.css";
-import logo from "../../assets/logo/idea_tree.png";
+import logo from "../../assets/logo/eco_comfort.png";
 
 import { FaPhone } from "react-icons/fa6";
 import { FaInfo } from "react-icons/fa6";
@@ -34,7 +34,7 @@ export const Contact = () => {
         toast.success("Your message has been sent successfully!", {
           position: "top-right",
           style: {
-            background: "#74D09D",
+            background: "#244436",
             color: "#fff",
           },
         });
@@ -64,16 +64,16 @@ export const Contact = () => {
         <div className="bg-[#F5FDF8] relative group overflow-hidden rounded lg:px-12 md:px-12 px-8 py-12">
           <div>
             <h2 className="text-lg font-medium">Get in Touch</h2>
-            <div className="border-b-4 border-[#74D09D] w-[30px] mt-1"></div>
+            <div className="border-b-4 border-[#244436] w-[30px] mt-1"></div>
           </div>
           <div className="mt-8 z-10 relative">
             <p>Numbers:</p>
             <div className="flex items-center gap-2 mt-2">
-              <p className="w-[22px] h-[22px] bg-[#74D09D] flex items-center justify-center text-[#fff] text-[12px] rounded">
+              <p className="w-[22px] h-[22px] bg-[#244436] flex items-center justify-center text-[#fff] text-[12px] rounded">
                 <FaPhone />
               </p>
               <p className="text-[#262626]/60 group-hover:text-[#262626]">
-                General Inquiries: +8801857241424
+                General Inquiries: 
               </p>
             </div>
           </div>
@@ -81,27 +81,27 @@ export const Contact = () => {
           <div className="mt-8 z-10 relative">
             <p>Email:</p>
             <div className="flex items-center gap-2 mt-2">
-              <p className="w-[22px] h-[22px] bg-[#74D09D] flex items-center justify-center text-[#fff] text-[12px] rounded">
+              <p className="w-[22px] h-[22px] bg-[#244436] flex items-center justify-center text-[#fff] text-[12px] rounded">
                 <FaInfo />
               </p>
               <p className="text-[#262626]/60 group-hover:text-[#262626]">
-                info@ideatreebd.com
+                {/* info@ideatreebd.com */}
               </p>
             </div>
 
             <div className="flex items-center gap-2 mt-2">
-              <p className="w-[22px] h-[22px] bg-[#74D09D] flex items-center justify-center text-[#fff] text-[12px] rounded">
+              <p className="w-[22px] h-[22px] bg-[#244436] flex items-center justify-center text-[#fff] text-[12px] rounded">
                 <BiSupport />
               </p>
               <p className="text-[#262626]/60 group-hover:text-[#262626]">
-                support@ideatreebd.com
+                {/* support@ideatreebd.com */}
               </p>
             </div>
           </div>
 
           <div className="mt-8 z-10 relative">
             <p>Business Hours:</p>
-            <div className="flex items-center gap-2 mt-2">
+            {/* <div className="flex items-center gap-2 mt-2">
               <p className="text-[#262626]/60 group-hover:text-[#262626]">
                 Saturday — Thursday 9am – 5pm
               </p>
@@ -111,14 +111,14 @@ export const Contact = () => {
               <p className="text-[#262626]/60 group-hover:text-[#262626]">
                 Friday — Closed
               </p>
-            </div>
+            </div> */}
           </div>
 
-          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#74D09D] rounded transform scale-x-100 transition-transform duration-300 ease-in-out"></div>
+          <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent to-[#244436] rounded transform scale-x-100 transition-transform duration-300 ease-in-out"></div>
         </div>
         <div className="">
           <div>
-            <div className="w-[140px] h-[80px]">
+            <div className="w-[140px] h-[100px]">
               <img src={logo} alt="" />
             </div>
             <div>
@@ -198,7 +198,7 @@ export const Contact = () => {
 
               <div>
                 <input
-                  className="px-2 py-2 border bg-[#74D09D] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
+                  className="px-2 py-2 border bg-[#244436] hover:bg-[#4eb67d] duration-300 rounded outline-none w-full text-[#fff] cursor-pointer"
                   type="submit"
                   value="Send Message"
                 />

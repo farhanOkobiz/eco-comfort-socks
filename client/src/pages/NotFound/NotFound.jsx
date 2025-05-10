@@ -22,7 +22,7 @@ const NotFound = () => {
         </p>
         <Link
           to="/"
-          className="mt-4 hover:text-[#74D09D] duration-300 cursor-pointer"
+          className="mt-4 hover:text-[#244436] duration-300 cursor-pointer"
         >
           Back to home page
         </Link>

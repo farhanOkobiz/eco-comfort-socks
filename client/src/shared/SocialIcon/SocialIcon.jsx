@@ -37,20 +37,20 @@ const SocialIcon = () => {
           icon: <FaFacebookF />,
           bgColor: "#0866FF",
           label: "Facebook",
-          link: "https://www.facebook.com/ideatreebd",
+          // link: "https://www.facebook.com/ideatreebd",
         },
 
         {
           icon: <FaYoutube />,
           bgColor: "#FF0033",
           label: "YouTube",
-          link: "https://www.youtube.com/@iDEATREE-e1y",
+          // link: "https://www.youtube.com/@iDEATREE-e1y",
         },
         {
           icon: <FaLinkedinIn />,
           bgColor: "#0C61BF",
           label: "Linkedin",
-          link: "https://www.linkedin.com/company/idea-tree/",
+          // link: "https://www.linkedin.com/company/idea-tree/",
         },
       ].map((item, index) => (
         <motion.div

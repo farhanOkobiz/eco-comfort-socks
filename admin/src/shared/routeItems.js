@@ -15,26 +15,61 @@ import { BsGraphUpArrow } from "react-icons/bs";
 import { GrGroup } from "react-icons/gr";
 
 export const menuItems = [
-  { key: "banners", label: "Banners", icon: IoImageOutline },
-  { key: "about-us", label: "About Us", icon: LuInfo },
-  { key: "our-team", label: "Our Team", icon: GrGroup },
-  { key: "profile", label: "Profile", icon: ImProfile },
-  { key: "service", label: "Service", icon: MdOutlineHomeRepairService },
-  { key: "latest-gallery", label: "Latest Gallery", icon: LuImages },
-  { key: "experience", label: "Experience", icon: VscWorkspaceTrusted },
-  { key: "brochure", label: "Brochure", icon: IoBookOutline },
-  // { key: "events", label: "Event", icon: MdOutlineEventAvailable },
-  { key: "publications", label: "Publication", icon: LuBookCheck },
-  // { key: "news", label: "News", icon: IoNewspaperOutline },
-  // { key: "careers", label: "Careers", icon: MdOutlineWorkOutline },
-  // { key: "job-applicants", label: "Job Applicant", icon: SlPeople },
-  { key: "gallery", label: "Gallery", icon: LuImages },
-  { key: "video", label: "Video", icon: IoVideocamOutline },
-  // {
-  //   key: "development-process",
-  //   label: "Development Process",
-  //   icon: BsGraphUpArrow,
-  // },
-  // { key: "our-values", label: "Our Values", icon: RiNumbersLine },
-  { key: "contact", label: "Contact", icon: LuContact },
+  {
+    key: "homepage",
+    label: "Homepage",
+    icon: MdOutlineHomeRepairService,
+    children: [
+      { key: "banners", label: "Banners", icon: IoImageOutline },
+      { key: "about-us", label: "About Us", icon: LuInfo },
+      { key: "latest-gallery", label: "Latest Gallery", icon: LuImages },
+    ],
+  },
+  {
+    key: "aboutpage",
+    label: "AboutPage",
+    icon: MdOutlineHomeRepairService,
+    children: [
+      { key: "our-team", label: "Our Team", icon: GrGroup },
+      { key: "profile", label: "About Profile", icon: ImProfile },
+    ],
+  },
+  {
+    key: "productpage",
+    label: "ProductPage",
+    icon: MdOutlineHomeRepairService,
+    children: [
+      { key: "service", label: "Product", icon: MdOutlineHomeRepairService },
+    ],
+  },
+  {
+    key: "profilepage",
+    label: "ProfilePage",
+    icon: MdOutlineHomeRepairService,
+    children: [{ key: "brochure", label: "Profile", icon: IoBookOutline }],
+  },
+  {
+    key: "gallerypage",
+    label: "GalleryPage",
+    icon: MdOutlineHomeRepairService,
+    children: [
+      { key: "gallery", label: "Gallery", icon: LuImages },
+      { key: "video", label: "Video", icon: IoVideocamOutline },
+    ],
+  },
+  {
+    key: "carrerpage",
+    label: "CareerPage",
+    icon: MdOutlineHomeRepairService,
+    children: [
+      { key: "careers", label: "Careers", icon: MdOutlineWorkOutline },
+      { key: "job-applicants", label: "Job Applicant", icon: SlPeople },
+    ],
+  },
+  {
+    key: "contactpage",
+    label: "ContactPage",
+    icon: MdOutlineHomeRepairService,
+    children: [{ key: "contact", label: "Messages", icon: LuContact }, ,],
+  },
 ];
